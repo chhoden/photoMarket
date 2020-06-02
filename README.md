@@ -1,22 +1,6 @@
--------------------------------------------------------------------------------------
-App Features:
-1. User (with/without account) must be able to view the photo listings
-2. User must be able to view the listing details (Price and photo information)
-3. Users with acount:
-    1. User must be able to upload a photo item (Upload Button)
-    2. User must be able to buy a listed item (Buy Button)
-    3. User must be able to contact listed item owner (Chat Box)
-    4. User must be able to view their account information (Profile Page)
-    5. User must be able to view thier buy and sale history (Transaction History)
-4. User must be able sign-up for an account (Sign-off Form)
-5. User must be able to login into their account (Login Form)
-6. User must be able to sign off (logout) of their account (Logout Button)
-
---------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------
-
-
-
+-------------------------------------------------------------------------------------------
+Photomarket: A website for individuals and businesses to buy and sell digital photographs. 
+-------------------------------------------------------------------------------------------
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
