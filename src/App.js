@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Home } from './containers/home';
+import { Login } from "./containers/login";
+import { SignUp } from './containers/signUp';
+import { Photo } from './components/photo';
+import { Upload } from './components/uploadImage';
+import { ChatBox } from './components/chatBox';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  render() {
+    return (
+      //Defining or registering routes
+      <Router>
+        <Switch>
+          <Route path="/home" component={Home} />
+          <Route path="/login" component={Login} />
+          <Route path="/signUP" component={SignUp} />
+          <Route path="/photo" component={Photo} />
+          <Route path="/uploadImage" component={Upload} />
+          <Route path="/chatBox" component={ChatBox} />
+        </Switch>
+      </Router>
+    );
+  }
 }
-
 export default App;
+
