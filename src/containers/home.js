@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, useContext } from 'react';
 import { NavigationBar } from '../components/navbar';
 import { Photo } from '../components/photo';
+import { UserContext } from '../App';
 
 class Home extends Component {
     constructor(props) {
@@ -22,13 +23,14 @@ class Home extends Component {
     }
 
     render() {
+        //const userInfo = useContext(UserContext);
         return (
             <div style={{ backgroundColor: '#ebf2f9' }}>
                 <NavigationBar />
                 <div className="photoRow">
                     {
                         this.state.photos.map((photo) => (
-                            <Photo key={photo._id} photo={photo} />
+                            < Photo key={photo._id} photo={photo} />
                         ))
                     }
                 </div>

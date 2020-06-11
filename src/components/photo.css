@@ -20,9 +20,11 @@ body {
   padding: 0 4px;
 }
 
-.column img {
-  margin-top: 8px;
+img {
+  padding: 3px;
   vertical-align: middle;
+  width: 486px;
+  height: 300px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */

@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Profile extends Component {
-    render() {
-        return (
-            <div></div>
-        )
-    }
+const Profile = () => {
+    return (
+        <div>
+            This is the profile page!
+        </div>
+    );
 }
-
 export { Profile };

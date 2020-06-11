@@ -1,14 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Message extends Component {
-
-    render() {
-        return (
-            <li id={this.props.message.id}>
-                {this.props.message.content}
-            </li>
-        );
-    }
+const Message = (props) => {
+    return (
+        <li id={props.message.id}>
+            {props.message.content}
+        </li>
+    );
 }
 
 export { Message };

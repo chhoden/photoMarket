@@ -1,14 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './photo.css';
 
-class Photo extends Component {
+const Photo = (props) => {
+    const { imageUrl, imageAlt, imageDescription, imageOwner, fileType, dimensions, category, uploadDate, price } = props.photo;
 
-    render() {
-        const { imageUrl, imageAlt, imageDescription, imageOwner, fileType, dimensions, category, uploadDate, price } = this.props.photo;
-        return (
-            <div className="column">
-                <img src={imageUrl} style={{ width: "500px", height: "300px" }} alt={imageAlt} />
-                {/* <div className="descriptionBox">
+    // const onClickHandler = () => {
+    //     this.props.history.push('/photo');
+    // }
+
+    return (
+        <picture className="column">
+            <img src={imageUrl} alt={imageAlt} />
+            {/* <div className="descriptionBox">
                     < h6>{imageDescription}</h6>
                     <span className="imageBy">By {imageOwner}</span>
                     <table>
@@ -28,9 +31,8 @@ class Photo extends Component {
                         </tr>
                     </table>
                 </div> */}
-            </div>
-        )
-    }
+        </picture>
+    )
 }
 
 export { Photo }
